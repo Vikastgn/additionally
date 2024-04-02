@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    min-width: 360px;
+}
+
+section {
+    min-height: 100vh;
+    background-color: rgb(252, 208, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: rgb(156,135,235);
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.elem {
+    background-color: rgb(253, 243, 157);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.elem:first-child {
+    flex-grow: 3;
+    flex-shrink: 5;
+}
+
+/* @media screen and (max-width: 992px) {
+    h1 {
+        color: blue;
+    }
+    .elem {
+        background-color: rgb(13, 0, 128);
+    }
+}
+@media screen and (max-width: 576px) {
+    h1 {
+        color: rgb(255, 0, 0);
+    }
+    .elem {
+        background-color: rgb(226, 43, 43);
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
+    h1 {
+        color: rgb(35, 119, 112);
+    }
+    .elem {
+        background-color: rgb(26, 175, 100);
+    }
+} */
+
+/* @media screen and (max-width: 700px) and (orientation: landscape) {
+    h1 {
+        color: rgb(35, 119, 112);
+    }
+    .elem {
+        background-color: rgb(26, 175, 100);
+    }
+} */
+
+/* @media screen and (max-width: 700px), (orientation: landscape) {
+    h1 {
+        color: rgb(35, 119, 112);
+    }
+    .elem {
+        background-color: rgb(26, 175, 100);
+    }
+} */
+
+@media screen and (max-width: 700px), not (orientation: landscape) {
+    h1 {
+        color: rgb(35, 119, 112);
+    }
+    .elem {
+        background-color: rgb(26, 175, 100);
+    }
+}
