@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./adaptive-images.css">
+    <title>Adaptive images</title>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- <div class="wrap">
+
+        <div class="img-box">
+            <div class="img-wrap">
+                <img src="./img/cat1.webp" alt="cat">
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="img-wrap">
+                <img src="./img/cats2.webp" alt="cat">
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="img-wrap">
+                <img src="./img/cats.webp" alt="cat">
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="img-wrap">
+                <img src="./img/cats2.webp" alt="cat">
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="img-wrap">
+                <img src="./img/cat1.webp" alt="cat">
+            </div>
+        </div> -->
+
+<!-- 
+        <img src="./img/cats.webp" alt="cat">
+        <img src="./img/cats2.webp" alt="cat">
+        <img src="./img/cat3.webp" alt="cat">
+        <img src="./img/cats.webp" alt="cat">
+        <img src="./img/cats2.webp" alt="cat"> -->
+    <!-- </div> -->
+
+    <picture>
+        <source media="(min-width: 800px)" srcset="./img/cat3.webp">
+        <source media="(max-width: 799px)" srcset="./img/cats2.webp">
+        <img src="./img/cat.jpg" alt="">
+    </picture>
+</body>
+</html>
