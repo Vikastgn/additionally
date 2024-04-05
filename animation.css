@@ -1,0 +1,42 @@
+body {
+    height: 200px;
+    background-color: #eae9ee;
+    padding: 20px;
+}
+
+.element {
+    height: 200px;
+    width: 200px;
+    background-color: #e91e63;
+    /* animation-name: square;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: paused; */
+
+    animation: square 5s ease-in-out 3s 2 alternate both paused;
+}
+
+.element:hover {
+    animation-play-state: running;
+}
+
+@keyframes square {
+    0% {
+        width: 50px;
+    }
+    27% {
+        width: 300px;
+    }
+    50% {
+        width: 100px;
+    }
+
+    100% {
+        width: 500px;
+        background-color: lightblue;
+    }
+}
