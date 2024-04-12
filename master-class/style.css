@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(47, 46, 65);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    min-width: 360px;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.main-section {
+    padding: 100px 0;
+}
+
+header,
+footer {
+    background-color: rgb(108, 99, 255);
+}
+
+header {
+    height: 80px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.login-btn {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.cards-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 5px;
+    width: 330px;
+    padding: 46px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card img {
+    margin: 40px 0 36px;
+    height: 200px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 9px 15xp;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+    header img {
+        width: 160px;
+    }
+}
+
